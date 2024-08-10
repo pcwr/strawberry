@@ -1,4 +1,4 @@
-name: test agi
+name: 🍓
   
 on:
   pull_request
@@ -11,8 +11,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Run AGI for 5s
-        run: |
+      - run: |
           set +e
 
           timeout 5s python3 strawberry.py
